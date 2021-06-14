@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlaylistDetailActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:orientation="vertical"
+        android:background="#494747">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/ic_baseline_queue_music_24"
+            android:background="#F3EBEB"
+            android:layout_gravity="center"
+            />
+        <TextView
+            android:id="@+id/playlist_detail_text_view_playlistName"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Playlist test"
+            android:textSize="23dp"
+            android:textColor="#FFF"/>
+        <TextView
+            android:id="@+id/playlist_detail_text_view_numOfSong"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3 bài hát"
+            android:textSize="18dp"
+            android:textColor="#FFF"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/playlist_detail_button_play_shuffle"
+        android:layout_marginTop="10dp"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Phát ngãu nhiên"
+        android:textSize="20dp"
+        android:textColor="#FFF"
+        android:background="#673AB7"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/playlist_detail_recycler_view"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/item_song"/>
+
+</LinearLayout>

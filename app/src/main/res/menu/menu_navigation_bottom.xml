@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Bài hát"
+        android:icon="@drawable/ic_baseline_library_music_24"
+        android:id="@+id/fragment_songs"/>
+    <item android:title="Album"
+        android:icon="@drawable/ic_baseline_album_24"
+        android:id="@+id/fragment_album"/>
+    <item android:title="Playlist"
+        android:icon="@drawable/ic_baseline_queue_music_24"
+        android:id="@+id/fragment_playlist"/>
+</menu>
